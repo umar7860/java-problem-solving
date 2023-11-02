@@ -9,5 +9,8 @@ public class Main {
 
         //Without variable
         basicLogics.swapNumbersWithOutVariable(50,100);
+
+        //fibonacciSeries
+        basicLogics.fibonacciSeries(20);
     }
 }

@@ -19,8 +19,20 @@ public class BasicLogics {
         a = a + b; // 7
         b = a - b; // 7 - 5 = 2
         a = a - b; // 7 - 2 = 5
-        
+
         System.out.println("After Swapping");
         System.out.println("A=" + a + " and B=" + b);
+    }
+
+    public void fibonacciSeries(int endingPoint) {
+        int first = 0;
+        int second = 1;
+
+        for (int i = 0; i < endingPoint; i++) {
+            System.out.print(first + " ");
+            int next = first + second;
+            first = second;
+            second = next;
+        }
     }
 }
