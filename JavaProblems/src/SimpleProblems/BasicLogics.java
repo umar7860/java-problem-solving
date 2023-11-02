@@ -35,4 +35,16 @@ public class BasicLogics {
             second = next;
         }
     }
+
+    public void sumOfNumber(int number) {
+        System.out.println("\n\n");
+        int sum = 0;
+        int x = 0;
+        while (number > 0) {
+            x = number % 10;
+            sum = sum + x;
+            number = number / 10;
+        }
+        System.out.println("Sum is: " + sum);
+    }
 }

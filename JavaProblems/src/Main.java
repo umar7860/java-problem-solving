@@ -12,5 +12,8 @@ public class Main {
 
         //fibonacciSeries
         basicLogics.fibonacciSeries(20);
+
+        //sum of int
+        basicLogics.sumOfNumber(12348);
     }
 }
