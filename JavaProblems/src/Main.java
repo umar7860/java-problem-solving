@@ -15,5 +15,8 @@ public class Main {
 
         //sum of int
         basicLogics.sumOfNumber(12348);
+
+        //ArmstrongNumber number
+        basicLogics.armstrongNumber(153);
     }
 }
