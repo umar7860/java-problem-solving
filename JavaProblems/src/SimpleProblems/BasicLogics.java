@@ -77,7 +77,23 @@ public class BasicLogics {
             }
         }
 
-        System.out.println(sum == number && number != 1);
+        System.out.println("Number is Perfect:" + String.valueOf(sum == number && number != 1));
+    }
+
+    //Prime number
+
+    public void isPrime(int number) {
+        int div = 0;
+        for (int i = 2; i < number / 2; i++) {
+            if (number % i == 0) {
+                div++;
+            }
+        }
+        if(div == 0 ) {
+            System.out.println("Number is Prime Number");
+        } else {
+            System.out.println("Number is not Prime Number");
+        }
     }
 }
 

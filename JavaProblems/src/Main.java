@@ -21,5 +21,8 @@ public class Main {
 
         //Perfect Number
         basicLogics.isPerfectNumber(28);
+
+        //Prime Number
+        basicLogics.isPrime(9);
     }
 }
