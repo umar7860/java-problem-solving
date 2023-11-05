@@ -63,5 +63,21 @@ public class BasicLogics {
         else
             System.out.println(temp + "is not an armstrong number");
     }
+
+
+    // Function to check if a number is perfect
+    public void isPerfectNumber(int number) {
+        System.out.println("\n\n");
+
+        int sum = 0;
+
+        for (int i = 1; i <= number / 2; i++) {
+            if (number % i == 0) {
+                sum += i;
+            }
+        }
+
+        System.out.println(sum == number && number != 1);
+    }
 }
 

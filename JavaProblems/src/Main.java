@@ -18,5 +18,8 @@ public class Main {
 
         //ArmstrongNumber number
         basicLogics.armstrongNumber(153);
+
+        //Perfect Number
+        basicLogics.isPerfectNumber(28);
     }
 }
