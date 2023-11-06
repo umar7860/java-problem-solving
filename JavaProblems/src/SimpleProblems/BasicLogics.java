@@ -89,11 +89,21 @@ public class BasicLogics {
                 div++;
             }
         }
-        if(div == 0 ) {
+        if (div == 0) {
             System.out.println("Number is Prime Number");
         } else {
             System.out.println("Number is not Prime Number");
         }
+    }
+
+    //Factorial of a number
+
+    public void factorial(int number) {
+        int fact = 1;
+        for (int i = 1; i <= number; i++) {
+            fact = fact * i;
+        }
+        System.out.println("Factorial of " + number + " is " + fact);
     }
 }
 

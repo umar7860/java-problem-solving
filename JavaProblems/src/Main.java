@@ -24,5 +24,8 @@ public class Main {
 
         //Prime Number
         basicLogics.isPrime(9);
+
+        //Factorial
+        basicLogics.factorial(8);
     }
 }
