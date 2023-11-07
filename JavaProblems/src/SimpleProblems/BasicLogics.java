@@ -105,5 +105,27 @@ public class BasicLogics {
         }
         System.out.println("Factorial of " + number + " is " + fact);
     }
+
+    //Reverse String
+
+    public  void performReverse(String str) {
+
+        StringBuilder newString = new StringBuilder(str);
+        newString.reverse();
+
+        //Showing reverse string
+        System.out.println("Reverse string using StringBuilder: " + newString.toString());
+
+        //Reverse string using string iteration
+        //Converting string to character array
+        char ch[] = str.toCharArray();
+        String reverseString = "";
+        //Reverse string using character array
+        for (int i = ch.length - 1; i >= 0; i--) {
+            reverseString += ch[i];
+        }
+        //Showing reverse string
+        System.out.println("Reverse string using string iteration: " + reverseString);
+    }
 }
 
