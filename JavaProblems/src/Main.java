@@ -28,7 +28,7 @@ public class Main {
         //Factorial
         basicLogics.factorial(8);
 
-        //Reverse String
+        //Reverse String  
         basicLogics.performReverse("UMAR AFTAB");
     }
 }
