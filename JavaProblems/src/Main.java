@@ -29,6 +29,9 @@ public class Main {
         basicLogics.factorial(8);
 
         //Reverse String  
-        basicLogics.performReverse("UMAR AFTAB");
+        basicLogics.performStringReverse("UMAR AFTAB");
+
+        //Reverse a number
+        basicLogics.performNumberReverse(234567);
     }
 }

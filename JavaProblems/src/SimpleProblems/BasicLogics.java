@@ -108,7 +108,7 @@ public class BasicLogics {
 
     //Reverse String
 
-    public  void performReverse(String str) {
+    public void performStringReverse(String str) {
 
         StringBuilder newString = new StringBuilder(str);
         newString.reverse();
@@ -126,6 +126,21 @@ public class BasicLogics {
         }
         //Showing reverse string
         System.out.println("Reverse string using string iteration: " + reverseString);
+    }
+
+    //Creating performReverse() method to reverse a number
+    public  void performNumberReverse(int number) {
+        int rev = 0;
+        int temp = number;
+        while (number != 0) {
+            //Calculating reminder
+            int rem = number % 10;
+            //multiplying variable reverse by 10 and adding the reminder into it
+            rev = rev * 10 + rem;
+            //Divide the number
+            number = number / 10;
+        }
+        System.out.println(rev + " is the reverse of the number " + temp);
     }
 }
 
