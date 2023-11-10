@@ -33,5 +33,8 @@ public class Main {
 
         //Reverse a number
         basicLogics.performNumberReverse(234567);
+
+        //Palindrome number
+        basicLogics.checkPalindrome(232);
     }
 }

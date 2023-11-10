@@ -129,7 +129,7 @@ public class BasicLogics {
     }
 
     //Creating performReverse() method to reverse a number
-    public  void performNumberReverse(int number) {
+    public void performNumberReverse(int number) {
         int rev = 0;
         int temp = number;
         while (number != 0) {
@@ -141,6 +141,26 @@ public class BasicLogics {
             number = number / 10;
         }
         System.out.println(rev + " is the reverse of the number " + temp);
+    }
+
+    //Palindrome Number
+    public void checkPalindrome(int number) {
+        int rem, sum = 0, temp;
+        //Storing value of number into temp variable
+        temp = number;
+
+        //Reversing number
+        while (number > 0) {
+            rem = number % 10;  //getting remainder
+            sum = (sum * 10) + rem;
+            number = number / 10;
+        }
+
+        //Checking whether the reversing number is equal to the number or not
+        if (temp == sum)
+            System.out.println(temp + " is a palindrome number");
+        else
+            System.out.println(temp + "is not a palindrome");
     }
 }
 
