@@ -36,5 +36,6 @@ public class Main {
 
         //Palindrome number
         basicLogics.checkPalindrome(232);
+        basicLogics.checkPalindrome(12345);
     }
 }
