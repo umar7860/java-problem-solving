@@ -37,5 +37,9 @@ public class Main {
         //Palindrome number
         basicLogics.checkPalindrome(232);
         basicLogics.checkPalindrome(12345);
+
+        //Palindrome String
+        basicLogics.checkPalindromeString("AUAUAU");
+        basicLogics.checkPalindromeString("AAA");
     }
 }

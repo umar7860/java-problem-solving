@@ -162,5 +162,23 @@ public class BasicLogics {
         else
             System.out.println(temp + "is not a palindrome");
     }
+
+    //Creating checkPalindrome() method to check string
+    public void checkPalindromeString(String str) {
+        String rev = "";
+        int length;
+
+        //Getting length of the string
+        length = str.length();
+
+        //Reversing string
+        for (int j = length - 1; j >= 0; j--)
+            rev = rev + str.charAt(j);
+
+        if (str.equals(rev))
+            System.out.println(str + " is a palindrome string.");
+        else
+            System.out.println(str + " is not a palindrome string.");
+    }
 }
 
