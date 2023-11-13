@@ -41,5 +41,8 @@ public class Main {
         //Palindrome String
         basicLogics.checkPalindromeString("AUAUAU");
         basicLogics.checkPalindromeString("AAA");
+
+        //duplicate character in String
+        basicLogics.findDuplicates("AAAAABBBBCCCC");
     }
 }
