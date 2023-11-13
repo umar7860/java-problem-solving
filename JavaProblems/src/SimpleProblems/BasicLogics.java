@@ -199,7 +199,7 @@ public class BasicLogics {
             }
             //A character is considered as duplicate if count is greater than 1
             if (count > 1 && strArray[i] != '0')
-                System.out.println(str + " contains " + strArray[i] + " " + count + " times");
+                System.out.println(str + " contains " + strArray[i] + " " + count +  " times");
         }
     }
 }
