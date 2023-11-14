@@ -180,7 +180,8 @@ public class BasicLogics {
         else
             System.out.println(str + " is not a palindrome string.");
     }
-    public  void findDuplicates(String str) {
+
+    public void findDuplicates(String str) {
         int count;
 
         //Converting given string into character array
@@ -199,8 +200,25 @@ public class BasicLogics {
             }
             //A character is considered as duplicate if count is greater than 1
             if (count > 1 && strArray[i] != '0')
-                System.out.println(str + " contains " + strArray[i] + " " + count +  " times");
+                System.out.println(str + " contains " + strArray[i] + " " + count + " times");
         }
+    }
+
+    public int[] removeTheElement(int[] arr, int index) {
+        if (arr == null || index < 0
+                || index >= arr.length) {
+
+            return arr;
+        }
+        int[] anotherArray = new int[arr.length - 1];
+        for (int i = 0, k = 0; i < arr.length; i++) {
+
+            if (i == index) {
+                continue;
+            }
+            anotherArray[k++] = arr[i];
+        }
+        return anotherArray;
     }
 }
 

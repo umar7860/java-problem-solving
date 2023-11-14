@@ -1,14 +1,16 @@
 import SimpleProblems.BasicLogics;
 
+import java.util.Arrays;
+
 public class Main {
     public static void main(String[] args) {
 //        System.out.println("Hello world!");
         //With variable
         BasicLogics basicLogics = new BasicLogics();
-        basicLogics.swapNumbersUsingThirdVariable(40,50);
+        basicLogics.swapNumbersUsingThirdVariable(40, 50);
 
         //Without variable
-        basicLogics.swapNumbersWithOutVariable(50,100);
+        basicLogics.swapNumbersWithOutVariable(50, 100);
 
         //fibonacciSeries
         basicLogics.fibonacciSeries(20);
@@ -44,5 +46,21 @@ public class Main {
 
         //duplicate character in String
         basicLogics.findDuplicates("AAAAABBBBCCCC");
+
+
+        //Remove elements from array
+        // Get the array
+        int[] arr = {1, 2, 3, 4, 5};
+        System.out.println("Original Array: "
+                + Arrays.toString(arr));
+        int index = 2;
+        System.out.println("Index to be removed: " + index);
+
+        // Remove the element
+        arr = basicLogics.removeTheElement(arr, index);
+
+        // Print the resultant array
+        System.out.println("Resultant Array: "
+                + Arrays.toString(arr));
     }
 }
