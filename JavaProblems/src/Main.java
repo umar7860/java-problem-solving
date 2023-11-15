@@ -56,7 +56,7 @@ public class Main {
         int index = 2;
         System.out.println("Index to be removed: " + index);
 
-        // Remove the element
+        // Remove the element from array
         arr = basicLogics.removeTheElement(arr, index);
 
         // Print the resultant array
