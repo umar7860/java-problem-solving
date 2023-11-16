@@ -45,7 +45,7 @@ public class Main {
         basicLogics.checkPalindromeString("AAA");
 
         //duplicate character in String
-        basicLogics.findDuplicates("AAAAABBBBCCCC");
+        basicLogics.findDuplicates("AAAAABBBBBBCCCC");
 
 
         //Remove elements from array
